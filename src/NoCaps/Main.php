@@ -18,7 +18,9 @@ class Main extends PluginBase implements Listener {
   public function onChat(PlayerChatEvent $event) {
     $player = $event->getPlayer();
     if(!$player->hasPermission("nocaps.avoidchecking")) {
-      $event->setMessage($event->getMessage()->toLowerCase());
+      $msg = $event->getMessage();
+      $msg = strtolower($msg);
+      $event->setMessage($msg);
     }
   }
 }

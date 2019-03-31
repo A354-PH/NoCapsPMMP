@@ -11,7 +11,7 @@ use pocketmine\event\player\PlayerChatEvent;
 class Main extends PluginBase implements Listener {
   
   public function onEnable() {
-    $this->getServer()->getPluginManager->registerEvents($this, $this);
+    $this->getServer()->getPluginManager()->registerEvents($this, $this);
     $this->getLogger()->info("NoCaps has been enabled! A plugin ported from NukkitX");
   }
   

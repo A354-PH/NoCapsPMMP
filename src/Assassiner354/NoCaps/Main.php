@@ -1,6 +1,6 @@
 <?php
 
-namespace NoCaps;
+namespace Assassiner354\NoCaps;
 
 use pocketmine\Server;
 use pocketmine\Player;

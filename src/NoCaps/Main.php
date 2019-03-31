@@ -19,8 +19,7 @@ class Main extends PluginBase implements Listener {
     $player = $event->getPlayer();
     if(!$player->hasPermission("nocaps.avoidchecking")) {
       $msg = $event->getMessage();
-      $msg = strtolower($msg);
-      $event->setMessage($msg);
+      $event->setMessage(strtolower($msg));
     }
   }
 }

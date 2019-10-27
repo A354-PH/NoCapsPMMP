@@ -6,4 +6,4 @@ Ported from NukkitX. Makes uppercase letters to lowercase letters
 
 ## Bugs/Contact
 
-DM me on Twitter(@RealA354) or on Discord(A354-PH#3267)!
+DM me on Twitter(@TheRealKizu) or on Discord(TheRealKizu#3267)!

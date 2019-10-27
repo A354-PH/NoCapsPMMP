@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../Workspace/ExynosX/.idea/ExynosX.iml" filepath="$PROJECT_DIR$/../../Workspace/ExynosX/.idea/ExynosX.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/NoCapsPMMP.iml" filepath="$PROJECT_DIR$/.idea/NoCapsPMMP.iml" />
+    </modules>
+  </component>
+</project>

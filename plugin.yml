@@ -1,9 +1,13 @@
 name: NoCapsPMMP
-main: TheRealKizu\NoCaps\Main
-version: 1.0.0
-api: [3.0.0]
+main: TheRealKizu\NoCaps\NoCaps
+version: 1.0.1
+api: 3.0.0
 author: TheRealKizu
+
+#Extras
+website: https://therealkizu.tk
 
 permissions:
   nocaps.avoidchecking:
     default: op
+    description: "Ignores the player to get his/her message get lowercased"

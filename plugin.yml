@@ -1,5 +1,5 @@
 name: NoCapsPMMP
-main: TheRealKizu\NoCaps\NoCaps
+main: TheRealKizu\NoCaps\Main
 version: 1.0.1
 api: 3.0.0
 author: TheRealKizu

@@ -23,36 +23,35 @@ use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerChatEvent;
 use pocketmine\plugin\PluginBase;
 
-class NoCaps extends PluginBase implements Listener
-{
+class Main extends PluginBase implements Listener {
 
     private static $instance;
 
-    public static function getInstance(): self
-    {
-        return self::$instance;
-    }
-
-    public function onLoad()
-    {
+    public function onLoad() {
         self::$instance = $this;
     }
 
-    public function onEnable()
-    {
+    public function onEnable() {
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
-        $this->getLogger()->info("NoCapsPMMP is now enabled! Made by (@TheRealKizu)");
+        //$this->getLogger()->info("NoCapsPMMP is now enabled! Made by (@TheRealKizu)");
     }
 
     /**
      * @param PlayerChatEvent $event
      */
-    public function onChat(PlayerChatEvent $event)
-    {
+    public function onChat(PlayerChatEvent $event) {
         $player = $event->getPlayer();
         if (!$player->hasPermission("nocaps.avoidchecking")) {
             $msg = $event->getMessage();
             $event->setMessage(mb_strtolower($msg, "UTF-8"));
         }
     }
+
+    /**
+     * @return static
+     */
+    public static function getInstance(): self {
+        return self::$instance;
+    }
+
 }
